@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --headerFontSize: 3rem;   
+    --headerPadding: 0.5rem; 
+    --footerFontSize: 3rem;
+    --footerPadding: 1rem;
+    --mainHeight: calc(
+        100vh 
+        - var(--headerFontSize) 
+        - (2 * var(--headerPadding))
+        - var(--footerFontSize) 
+        - (2 * var(--footerPadding))
+    );
+}
+
+html {
+    line-height: 1;
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+}
+
+header {
+    background-color: rgb(77, 0, 77);
+    font-size: var(--headerFontSize);
+    padding: var(--headerPadding);
+    text-align: center;
+    color: gold;
+}
+
+main {
+    background-color: lightblue;
+    font-size: 1.5rem;
+    text-align: center;
+    height: var(--mainHeight);
+    overflow-y: auto;
+}
+
+footer {
+    background-color: rgb(77, 0, 77);
+    font-size: var(--footerFontSize);
+    padding: var(--footerPadding);
+    text-align: center;
+    color: gold;
+}
+
